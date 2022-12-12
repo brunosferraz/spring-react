@@ -1,0 +1,9 @@
+services:
+  backend:
+    image: brunosferraz/demo:latest
+    container_name: backend
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    ports:
+      - "80:8001"
+    restart: always

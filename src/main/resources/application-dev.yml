@@ -1,0 +1,21 @@
+server:
+  port: 8001
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  application:
+    name: student
+  datasource:
+    username: ferraz
+    url: jdbc:postgresql://awseb-e-i7m8cccigv-stack-awsebrdsdatabase-73d8n7ppiyox.cjonfyfhmgy5.us-east-1.rds.amazonaws.com:5432/student
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
